@@ -44,36 +44,6 @@ Copy code
 3. **Run the Notebook Cells**: Start from the top cell, modify the product search URL and other parameters to suit your needs, and then run the notebook to scrape the data.
 4. **Extracted Data**: The notebook will display the extracted product data and allow exporting it to a file.
 
-### Example
-
-1. Search for a product by setting the URL in the first cell:
-
-python
-
-Copy code
-
-`url = 'https://www.amazon.com/s?k=laptop'`
-
-2. Customize the scraping code to extract product name, price, and rating:
-
-python
-
-Copy code
-
-`titles = soup.find_all('span', {'class': 'a-size-medium a-color-base a-text-normal'}) prices = soup.find_all('span', {'class': 'a-price-whole'}) ratings = soup.find_all('span', {'class': 'a-icon-alt'})`
-
-3. Run the notebook, and the scraped data will appear in a tabular format.
-    
-4. Export the scraped data to a CSV file:
-    
-
-python
-
-Copy code
-
-`df.to_csv('amazon_products.csv', index=False)`
-
----
 
 ## Notes
 
